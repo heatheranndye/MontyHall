@@ -46,7 +46,7 @@ for i in range(5):
 
 st.title("The Monty Hall Problem")
 
-st.markdown("On the Monty Hall Show, a prize was hidden behind one of three doors. Contestants had to select a door.")
+st.markdown("On the game show, a prize was hidden behind one of three doors. Contestants had to select a door.")
 st.markdown("But, then there was a twist - after the contestent picked a door, the host then opened one of the remaining doors.")
 st.markdown("The host asked the contestant if they'd like to switch doors.")
 
