@@ -52,7 +52,7 @@ st.markdown("The host asked the contestant if they'd like to switch doors.")
 
 st.subheader("So that is the question. Switch or stay?")
 
-st.markdown("In the simulation below, we simulate the switch and stay strategys.")
+st.markdown("In the simulation below, we simulate the switch and stay strategies.")
 st.markdown("If there is a *1* in the Stay column, that strategy won.")
 st.markdown("If there is a *1* in the Switch column, that strategy won.")
 
@@ -85,7 +85,7 @@ def average_list():
     return my_results
 
 
-number = st.number_input("Enter a number of trials, to see which strategy is better.")
+number = st.number_input("Enter a number of trials. The graph will update to see which strategy is better.")
 number = math.floor(number)
 
 increment = st.button('Update')
@@ -99,7 +99,7 @@ if increment:
     update_means()
     st.write('Stay percentage wins = ', st.session_state.stay_mean)    
     st.write('Switch percentage wins =', st.session_state.switch_mean)
-    st.write(len(st.session_state.the_data))
+    st.write('The number of trials:', len(st.session_state.the_data))
 
 results = average_list()
 st.line_chart(results)
